@@ -5,6 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Generador de Cartas Aleatorias</title>
+    <style>
+      /* Estilo para el body */
+      body {
+        background-color: green; /* Fondo verde para el body */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        flex-direction: column;
+      }
+
+      h1 {
+        color: white;
+        text-align: center;
+      }
+
+      /* Estilo para el contenedor de las cartas */
+      #cartas-container {
+        width: 150px;
+        height: 250px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* Estilo para el icono del palo superior izquierdo */
+      #palo1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 20px;
+        color: black; /* Color del palo */
+      }
+
+      /* Estilo para el número en el centro de la carta */
+      #numero {
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 60px;
+        color: black;
+      }
+
+      /* Estilo para el icono del palo inferior derecho */
+      #palo2 {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 20px;
+        color: black;
+      }
+    </style>
   </head>
   <body>
     <h1>Generador de Cartas Aleatorias</h1>

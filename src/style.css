@@ -1,1 +1,35 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+#cartas-container {
+  width: 120px;
+  height: 180px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+}
+#palo1 #bottomicon {
+  position: absolute;
+  font-size: 20px;
+}
+#palo1 {
+  top: 10px;
+  left: 10px;
+}
+#palo2 {
+  bottom: 10px;
+  right: 10px;
+}
+#numero {
+  font-size: 30px;
+  margin-top: 50px;
+}

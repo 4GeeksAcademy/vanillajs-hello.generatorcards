@@ -14,10 +14,9 @@ window.onload = function() {
     "J",
     "Q",
     "K"
-  ]; //numeros
+  ]; // números
 
   // Función para obtener un valor aleatorio de un array
-
   let paloRandom = palos[Math.floor(Math.random() * palos.length)];
   let numeroRandom = numeros[Math.floor(Math.random() * numeros.length)];
 
@@ -29,4 +28,13 @@ window.onload = function() {
 
   let palo2 = document.getElementById("palo2");
   palo2.innerText = paloRandom;
+
+  // Cambiar el color de los palos dependiendo de si es rojo o negro
+  if (paloRandom === "♥" || paloRandom === "♦") {
+    palo1.style.color = "red"; // Rojo para los palos de corazones y diamantes
+    palo2.style.color = "red"; // Rojo para los palos de corazones y diamantes
+  } else {
+    palo1.style.color = "black"; // Negro para los palos de trébol y espadas
+    palo2.style.color = "black"; // Negro para los palos de trébol y espadas
+  }
 };
